@@ -1,53 +1,23 @@
 <html>
 <head>
-    <script type="text/javascript" src="vis/dist/vis.js"></script>
-    <link href="vis/dist/vis.css" rel="stylesheet" type="text/css" />
+    <link href="bower_components/vis/dist/vis.css" rel="stylesheet" type="text/css" />
+    <link href="bower_components/components-font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 
-    <style type="text/css">
-        #mynetwork {
-            width: 600px;
-            height: 400px;
-            border: 1px solid lightgray;
-        }
-    </style>
 </head>
-<body>
-<div id="mynetwork"></div>
 
-<script type="text/javascript">
-    // create an array with nodes
-    var nodes = new vis.DataSet([
-        {id: 1, label: 'Node 1'},
-        {id: 2, label: 'Node 2'},
-        {id: 3, label: 'Node 3'},
-        {id: 4, label: 'Node 4'},
-        {id: 5, label: 'Node 5'}
-    ]);
-
-    // create an array with edges
-    var edges = new vis.DataSet([
-        {from: 1, to: 3},
-        {from: 1, to: 2},
-        {from: 2, to: 4},
-        {from: 2, to: 5}
-    ]);
-
-    // create a network
-    var container = document.getElementById('mynetwork');
-
-    // provide the data in the vis format
-    var data = {
-        nodes: nodes,
-        edges: edges
-    };
-    var options = {
-      edges:{
-        hidden: true
-      }
-    }
-
-    // initialize your network!
-    var network = new vis.Network(container, data, options);
-</script>
-</body>
+  <body>
+    <div id="maincontainer">
+      <div id="myintro">
+        <img src="images/nakul-large.jpg" class="main-image" />
+        <div class="intro-text">
+          Howdy!! My name is Nakul and I love to &lt;code/&gt;
+        </div>
+      </div>
+      <div id="mynetwork"></div>
+    </div>
+    <script type="text/javascript" src="bower_components/vis/dist/vis.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="js/mainpage.js"></script>
+  </body>
 </html>
