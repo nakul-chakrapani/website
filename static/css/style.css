@@ -1,13 +1,5 @@
 body {
-  background:
-  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-  background-color: #131313;
-  background-size: 20px 20px;
+  background: url('/images/green_cup.png');
 }
 
 canvas {
@@ -22,32 +14,38 @@ canvas {
 #maincontainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
-#myintro {
-  width: 40%;
+.myintro {
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-#mynetwork {
-  width: 60%;
-  height: auto;
-}
-
 .main-image {
-  border-radius: 100px;
-  padding-left: 5vw;
-  padding-top: 10vh;
-  padding-right: 5vw;
-  padding-bottom: 10vh;
-  width: 20vw;
-  height: 50vh;
+  width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, .8) ;
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 .intro-text {
   display: flex;
   justify-content: center;
+  font-family: 'Abril Fatface';
+  font-size: 25px;
+  color: #35323d;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding: 5vw;
 }
